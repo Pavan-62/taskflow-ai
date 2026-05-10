@@ -37,30 +37,3 @@ TaskFlow AI is a modern, collaborative Project Management SaaS application built
 
 4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Vercel Deployment
-
-This project is fully ready to be deployed on Vercel. 
-
-### Environment Variables
-When importing the repository into Vercel, you must add the following Environment Variables in the Vercel Dashboard before clicking Deploy:
-
-**Firebase Client Config (Required for Web SDK):**
-- `NEXT_PUBLIC_FIREBASE_API_KEY`
-- `NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN`
-- `NEXT_PUBLIC_FIREBASE_PROJECT_ID`
-- `NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET`
-- `NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID`
-- `NEXT_PUBLIC_FIREBASE_APP_ID`
-
-**Firebase Admin SDK (Required for Server-Side Verification):**
-- `FIREBASE_PROJECT_ID`
-- `FIREBASE_CLIENT_EMAIL`
-- `FIREBASE_PRIVATE_KEY` 
-  *(Note: When pasting the private key in Vercel, include the `-----BEGIN PRIVATE KEY-----` and `-----END PRIVATE KEY-----` exactly as they appear in your service account JSON file. The application automatically formats newline characters).*
-
-### Deployment Steps
-1. Push this repository to GitHub.
-2. Log into [Vercel](https://vercel.com) and click **Add New Project**.
-3. Import your `taskflow-ai` GitHub repository.
-4. Open the **Environment Variables** section and paste the keys listed above.
-5. Click **Deploy**. Vercel will automatically build the Next.js app and deploy your live URL.
